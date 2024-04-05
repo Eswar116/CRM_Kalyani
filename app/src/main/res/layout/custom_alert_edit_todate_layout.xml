@@ -1,0 +1,93 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffffff"
+        android:orientation="vertical"
+        android:padding="@dimen/Dp_10">
+
+    <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Update From Date"
+                    android:textSize="@dimen/dp_20" />
+
+            <TextView
+                    android:id="@+id/tvFromDate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_20"
+                    android:layout_marginTop="@dimen/dp_5"
+                    android:layout_marginRight="@dimen/dp_20"
+                    android:background="@drawable/bg_filter_text"
+                    android:paddingTop="@dimen/dp_5"
+                    android:paddingRight="@dimen/dp_40"
+                    android:paddingBottom="@dimen/dp_5"
+                    android:text=" "
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/sp_16" />
+
+
+            <TextView
+                    android:id="@+id/tvRejectedOrApproved"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Update ToDate"
+                    android:textSize="@dimen/dp_20" />
+
+            <TextView
+                    android:id="@+id/tvToDate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_20"
+                    android:layout_marginTop="@dimen/dp_5"
+                    android:layout_marginRight="@dimen/dp_20"
+                    android:background="@drawable/bg_filter_text"
+                    android:paddingTop="@dimen/dp_5"
+                    android:paddingRight="@dimen/dp_40"
+                    android:paddingBottom="@dimen/dp_5"
+                    android:text=" "
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/sp_16" />
+
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_25"
+                    android:gravity="right">
+
+                <TextView
+                        android:id="@+id/tvCancel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Cancel"
+                        android:textColor="@color/colorPressed"
+                        android:textStyle="bold" />
+
+                <TextView
+                        android:id="@+id/tvDone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dp_15"
+                        android:layout_marginBottom="10dp"
+                        android:text="Done"
+                        android:textColor="@color/colorPressed"
+                        android:textStyle="bold" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

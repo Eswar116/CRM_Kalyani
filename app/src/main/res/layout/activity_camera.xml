@@ -1,0 +1,89 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorUnpressed"
+        android:gravity="bottom"
+        tools:context=".order.activity.CameraActivity">
+
+    <LinearLayout
+            android:id="@+id/activity_main_ll_lable"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+        <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/normal_image" />
+
+        <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/compress_image" />
+    </LinearLayout>
+
+    <LinearLayout
+            android:id="@+id/activity_main_ll_image"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_below="@+id/activity_main_ll_lable"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+
+        <ImageView
+                android:id="@+id/ivImage"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                app:srcCompat="@mipmap/ic_launcher" />
+    </LinearLayout>
+
+    <TextView
+            android:id="@+id/activity_main_btn_load_from_gallery"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/activity_main_ll_image"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/bg_pressed"
+            android:padding="@dimen/dp_10"
+            android:text="@string/load_from_gallery"
+            android:textColor="@android:color/white" />
+
+    <TextView
+        android:id="@+id/activity_main_btn_load_from_camera"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/activity_main_btn_load_from_gallery"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="@dimen/dp_20"
+        android:background="@drawable/bg_pressed"
+        android:padding="@dimen/dp_10"
+        android:text="@string/load_from_camera"
+        android:textColor="@android:color/white" />
+
+    <Button
+            android:id="@+id/activity_main_btn_compress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/activity_main_btn_load_from_camera"
+            android:layout_alignStart="@+id/activity_main_btn_load_from_gallery"
+            android:layout_alignLeft="@+id/activity_main_btn_load_from_gallery"
+            android:layout_alignEnd="@+id/activity_main_btn_load_from_camera"
+            android:layout_alignRight="@+id/activity_main_btn_load_from_camera"
+            android:layout_marginTop="10dp"
+            android:text="@string/compress"
+            android:visibility="gone" />
+</RelativeLayout>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".registration.SplashActivity">
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/dp_15"
+            android:layout_centerInParent="true">
+
+
+        <ImageView
+                android:id="@+id/background"
+                android:layout_width="250dp"
+                android:layout_height="250dp"
+                android:layout_centerInParent="true"
+                android:background="@drawable/kalyani_logo_1" />
+        <!--                android:background="@drawable/kalyani_logo_1" />-->
+        <!--                android:background="@drawable/kalyani_logo_new" />-->
+        <!--                android:background="@drawable/imgpsh_fullsize_splash" />-->  <!--        Previous logo-->
+
+
+        <TextView
+                android:id="@+id/tvEss"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/background"
+                android:layout_alignLeft="@+id/background"
+                android:layout_alignTop="@+id/background"
+                android:layout_alignEnd="@+id/background"
+                android:layout_alignRight="@+id/background"
+                android:gravity="left"
+                android:text="ebizframe"
+                android:textColor="@color/white"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+        <TextView
+                android:id="@+id/tvCrm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/background"
+                android:layout_alignLeft="@+id/background"
+                android:layout_alignEnd="@+id/background"
+                android:layout_alignRight="@+id/background"
+                android:layout_alignBottom="@+id/background"
+                android:layout_marginEnd="2dp"
+                android:layout_marginRight="2dp"
+                android:gravity="center"
+                android:text="CRM"
+                android:textColor="@color/white"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

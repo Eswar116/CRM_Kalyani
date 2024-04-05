@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollIndicators="none">
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+            <LinearLayout
+                    style="@style/dtlTxtLyout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/headlineBackground">
+
+                <ImageView
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="@dimen/dp_10"
+                        app:srcCompat="@drawable/ic_user" />
+
+                <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dp_10"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                    <TextView
+                            android:id="@+id/tvName"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Name"
+                            android:textColor="@android:color/black"
+                            android:textSize="@dimen/sp_16" />
+
+                    <TextView
+                            android:id="@+id/tvMob"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/colorSky"
+                            android:textSize="@dimen/sp_14"
+                            tools:text="M:797987" />
+
+                    <TextView
+                            android:id="@+id/tvEmail"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/colorGreenBtn"
+                            android:textSize="@dimen/sp_14"
+                            tools:text="E: ess@idd.com" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_1"
+                    android:background="@color/colorSeperatorLine" />
+
+
+            <LinearLayout
+                    style="@style/dtlTxtLyout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                <TextView
+                        style="@style/dtlTxtHdr"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Username : "
+                        android:textSize="@dimen/sp_14" />
+
+                <TextView
+                        android:id="@+id/tvUsername"
+                        style="@style/dtlTxtDtl"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/sp_14"
+                        tools:text="mukesh" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                    style="@style/dtlTxtLyout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                <TextView
+                        style="@style/dtlTxtHdr"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Password : "
+                        android:textSize="@dimen/sp_14" />
+
+                <TextView
+                        android:id="@+id/tvPassword"
+                        style="@style/dtlTxtDtl"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/sp_14"
+                        tools:text="mukesh" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                    style="@style/dtlTxtLyout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                <TextView
+                        style="@style/dtlTxtHdr"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Type : "
+                        android:textSize="@dimen/sp_14" />
+
+                <TextView
+                        android:id="@+id/tvType"
+                        style="@style/dtlTxtDtl"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/sp_14"
+                        tools:text="User" />
+            </LinearLayout>
+
+            <LinearLayout
+                    style="@style/dtlTxtLyout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                <TextView
+                        style="@style/dtlTxtHdr"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Category :"
+                        android:textSize="@dimen/sp_14" />
+
+                <TextView
+                        android:id="@+id/tvCategory"
+                        style="@style/dtlTxtDtl"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/sp_14"
+                        tools:text="Sales Manager" />
+            </LinearLayout>
+
+            <LinearLayout
+                    style="@style/dtlTxtLyout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                <TextView
+                        style="@style/dtlTxtHdr"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Department : "
+                        android:textSize="@dimen/sp_14" />
+
+                <TextView
+                        android:id="@+id/tvDepartment"
+                        style="@style/dtlTxtDtl"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/sp_14"
+                        tools:text="Sales" />
+            </LinearLayout>
+
+            <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_1"
+                    android:background="@color/colorSeperatorLine" />
+
+            <LinearLayout
+                    android:id="@+id/llDt"
+                    style="@style/dtlTxtLyout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Reports To : "
+                        android:textColor="@color/colorSky"
+                        android:textSize="@dimen/sp_14"
+                        android:textStyle="bold" />
+
+                <TextView
+                        android:id="@+id/tvReportsTo"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dp_5"
+                        android:layout_weight="1"
+                        android:textColor="@color/colorSky"
+                        android:textSize="@dimen/sp_14"
+                        tools:text="Ketan Gulati" />
+
+
+            </LinearLayout>
+
+            <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_1"
+                    android:background="@color/colorSeperatorLine" />
+
+            <TextView
+                    style="@style/dtlTxtHdr"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/dp_8"
+                    android:text="Alloted States : "
+                    android:textSize="@dimen/sp_14" />
+
+            <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_1"
+                    android:background="@color/colorSeperatorLine" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rvStates"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+            </androidx.recyclerview.widget.RecyclerView>
+
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

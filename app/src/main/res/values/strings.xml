@@ -1,0 +1,116 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">CRM</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="recent_orders" tools:ignore="MissingTranslation">Recent Orders</string>
+    <string name="cancel">cancel</string>
+    <string name="filter">Filter</string>
+    <string name="apply">Apply</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="newIcon">New</string>
+    <string name="sort">Sort</string>
+    <string name="load_from_camera">Load From Camera</string>
+    <string name="compress">Compress</string>
+    <string name="normal_image">Normal Image</string>
+    <string name="compress_image">Compress Image</string>
+    <string name="load_from_gallery">Load From Gallery</string>
+    <string name="expenseBy">Expense By</string>
+    <string name="Save">Save</string>
+    <string name="date_empty">Date should not be empty.</string>
+    <string name="recent_expenses">Recent Expenses</string>
+    <string name="all_expenses">All Expenses</string>
+    <string name="attendance_detail">Attendance Detail</string>
+    <string name="remarks">Remarks</string>
+    <string name="address">Address</string>
+    <string name="type">Type:</string>
+    <string name="period">Period : </string>
+    <string name="orders">Orders</string>
+    <string name="branding">Branding</string>
+    <string name="complaints">Complaints</string>
+    <string name="complaints_feedback">Complaint/Feedback</string>
+    <string name="feedbacks">Feedbacks</string>
+    <string name="market_plans">Market Plans</string>
+    <string name="attachments">Attachments</string>
+    <string name="recent_customers">Recent Customers</string>
+    <string name="recent_users">Recent Users</string>
+    <string name="customer_information">Customer Information</string>
+    <string name="user_information">User Information</string>
+    <string name="plan_information">Plan Information</string>
+    <string name="contact_detail">Contact Details</string>
+    <string name="mobile_number">Mobile Number</string>
+    <string name="email">Email Id</string>
+    <string name="others">Others</string>
+    <string name="otherssmall">Others</string>
+    <string name="market_plan">Market Plan</string>
+    <string name="attendance">Attendance</string>
+    <string name="expenses">Expenses</string>
+    <string name="collections">Collections</string>
+    <string name="sales_orders">Sales Orders</string>
+    <string name="customers">Customers</string>
+    <string name="module">Module</string>
+    <string name="favourite">Favourite</string>
+    <string name="home">Home</string>
+    <string name="competition">Competition</string>
+    <string name="users">Users</string>
+    <string name="sales_scheme">Sales Scheme</string>
+    <string name="complaint_feedback">Complaint/Feedback</string>
+    <string name="settings">Settings</string>
+    <string name="help">Help</string>
+    <string name="about">About</string>
+    <string name="CRM_App"><u>CRM App</u></string>
+    <string name="today">Today</string>
+    <string name="no_data_found">NO DATA FOUND</string>
+    <string name="order_detail">Order Detail</string>
+    <string name="title_activity_bottom_navigation">bottomNavigationActivity</string>
+    <string name="scan_Vcard">Scan VCard</string>
+    <string name="complaint_detail">Complaint Detail</string>
+    <string name="competition_detail">Competition Detail</string>
+    <string name="update">Update</string>
+    <string name="logout">Logout</string>
+
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="delete">Delete</string>
+    <string name="speech_prompt">Say something&#8230;</string>
+    <string name="speech_not_supported">Sorry! Your device doesn\'t support speech input</string>
+
+    <string name="expense_owner">Expense Owner</string>
+    <string name="plan_owner">Plan Owner</string>
+    <string name="remark_txt">Return Train ticket to Patna.Both bill attached.</string>
+    <string name="others_details">Others Details</string>
+    <string name="plan_details">Plan Details</string>
+    <string name="reject">Reject</string>
+    <string name="approve">Approve</string>
+    <string name="edit">Edit</string>
+    <string name="commentbyApprover">Comment By Approver :</string>
+    <string name="select_image_for_text_recognition">Select image for text recognition</string>
+    <string name="find_text_button">Find text</string>
+
+    <string name="default_notification_channel_id" translatable="false">fcm_default_channel</string>
+    <string name="notification">Notification</string>
+    <string name="ok">ok</string>
+    <string name="yes">yes</string>
+    <string name="gps">gps</string>
+    <string name="no">no</string>
+    <string name="gpsebale">Please enable your GPS Location.</string>
+    <string name="notsuppoted">GPS Location not supported</string>
+    <string name="apiKey">AIzaSyB4AFaEcN_xm62gfrv0TswD0xzpW2gmmY4</string>
+    <string name="title_activity_verification_header">VerificationHeader</string>
+    <string name="responsible_person">Responsible Persons</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="username">username</string>
+    <string name="stock_summary">Stock Summary</string>
+    <string name="sign_in"> Sign In </string>
+
+    <string-array name="box_spn">
+        <item>Select</item>
+        <item>Pc</item>
+        <item>Bx</item>
+    </string-array>
+</resources>

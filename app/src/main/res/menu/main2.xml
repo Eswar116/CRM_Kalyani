@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto">
+    <!--   <item android:id="@+id/action_settings"
+             android:title="@string/action_settings"
+             android:orderInCategory="100"
+             app:showAsAction="never"/>-->
+
+    <item
+            android:id="@+id/pending"
+            android:visible="true"
+            android:title=""
+            android:icon="@drawable/ic_approve"
+            app:showAsAction="always">
+    </item>
+    <item android:id="@+id/search"
+          android:visible="true"
+          android:title=""
+          android:icon="@drawable/ic_magnifying_glass"
+          app:showAsAction="always">
+    </item>
+    <item android:id="@+id/notification"
+          android:visible="false"
+          android:title=""
+          android:icon="@drawable/ic_notifications_button"
+          app:actionLayout="@layout/custom_action_item"
+          app:showAsAction="always">
+    </item>
+</menu>

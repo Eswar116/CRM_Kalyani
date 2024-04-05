@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/llRow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dp_1"
+            android:background="@android:color/white"
+            android:orientation="horizontal"
+            android:padding="5dp"
+            android:weightSum="5">
+
+        <LinearLayout
+                android:id="@+id/ll_expense"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="2.5"
+                android:orientation="vertical">
+
+            <TextView
+                    android:id="@+id/tvMarketPlan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="@dimen/dp_5"
+                    android:gravity="bottom"
+                    android:text="Market Plan"
+                    android:textColor="@color/colorOrange"
+                    android:textSize="@dimen/sp_12"
+                    android:visibility="gone" />
+
+            <TextView
+                    android:id="@+id/tv_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="Expense"
+                    android:textSize="@dimen/sp_16"
+                    android:textStyle="bold" />
+
+            <TextView
+                    android:id="@+id/tvDistibutor_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="expense detail"
+                    android:textSize="@dimen/sp_14" />
+
+            <TextView
+                    android:id="@+id/tvTotalBox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="Total Box"
+                    android:textSize="@dimen/sp_14"
+                    android:visibility="gone" />
+
+            <TextView
+                    android:id="@+id/tvDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="@dimen/dp_5"
+                    android:gravity="bottom"
+                    android:text="Date"
+                    android:textColor="@color/colorPressed"
+                    android:textSize="@dimen/sp_14"
+                    android:textStyle="bold" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_weight="2.5"
+                android:gravity="right|center"
+                android:orientation="vertical">
+
+            <TextView
+                    android:id="@+id/yvTime"
+                    style="@style/pill"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent" />
+
+
+            <TextView
+                    android:id="@+id/erpId"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="@dimen/dp_5"
+                    android:gravity="bottom"
+                    android:text="erpId"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/sp_14"
+                    android:textStyle="bold" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorBackground" />
+
+
+</LinearLayout>

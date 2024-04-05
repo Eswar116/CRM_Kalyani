@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        tools:showIn="navigation_view">
+
+    <group>
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_menu_home"
+            android:title="@string/home" />
+        <item
+            android:id="@+id/favrt"
+            android:icon="@drawable/ic_menu_star"
+            android:title="@string/favourite" />
+    </group>
+
+    <item android:title="@string/module">
+        <menu>
+            <group android:checkableBehavior="single">
+
+                <item
+                        android:id="@+id/nav_customers"
+                        android:icon="@drawable/ic_menu_customer"
+                        android:title="@string/customers" />
+                <item
+                        android:id="@+id/nav_sales_orders"
+                        android:icon="@drawable/ic_menu_order"
+                        android:title="@string/sales_orders" />
+                <item
+                        android:id="@+id/nav_collections"
+                        android:icon="@drawable/ic_menu_collection"
+                        android:title="@string/collections"
+                        android:visible="false" />
+                <item
+                        android:id="@+id/nav_expense"
+                        android:icon="@drawable/ic_menu_expense"
+                        android:title="@string/expenses" />
+
+                <item
+                        android:id="@+id/nav_attendance"
+                        android:icon="@drawable/ic_menu_attendance"
+                        android:title="@string/attendance" />
+
+                <item
+                        android:id="@+id/nav_marketPlan"
+                        android:icon="@drawable/ic_menu_marketplan"
+                        android:title="@string/market_plan"
+                        android:visible="true" />
+
+                <item
+                        android:id="@+id/nav_competition"
+                        android:icon="@drawable/ic_menu_competition"
+                        android:title="@string/competition" />
+                <item
+                        android:id="@+id/nav_users"
+                        android:icon="@drawable/ic_add_user"
+                        android:title="@string/users" />
+
+                <item
+                        android:id="@+id/nav_sales_scheme"
+                        android:icon="@drawable/ic_add_white_24dp"
+                        android:title="@string/sales_scheme"
+                        android:visible="false" />
+                <item
+                        android:id="@+id/nav_complaint"
+                        android:icon="@drawable/ic_menu_feedback"
+                        android:title="@string/complaint_feedback" />
+
+
+            </group>
+        </menu>
+    </item>
+    <item android:title="@string/otherssmall">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                        android:id="@+id/nav_logout"
+                        android:icon="@drawable/ic_exit_to_app_black_24dp"
+                        android:title="@string/logout" />
+
+                <item
+                        android:id="@+id/nav_settings"
+                        android:icon="@drawable/ic_settings_work_tool"
+                        android:title="@string/settings" />
+                <item
+                        android:icon="@drawable/ic_menu_help"
+                        android:title="@string/help" />
+                <item
+                        android:id="@+id/nav_about"
+                        android:icon="@drawable/ic_menu_about"
+                        android:title="@string/about" />
+            </group>
+        </menu>
+    </item>
+
+</menu>

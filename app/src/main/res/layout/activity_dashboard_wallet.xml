@@ -1,0 +1,517 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/grey_5"
+        android:fitsSystemWindows="true"
+        android:orientation="vertical">
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            tools:ignore="UselessParent">
+
+        <androidx.core.widget.NestedScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scrollbars="none"
+                android:scrollingCache="true">
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                <com.google.android.material.appbar.AppBarLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/grey_5"
+                        app:elevation="0dp">
+
+                    <!--
+                                        <androidx.appcompat.widget.Toolbar
+                                            android:id="@+id/toolbar"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="?attr/actionBarSize"
+                                            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+                                            app:contentInsetStartWithNavigation="0dp"
+                                            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+                                            app:theme="@style/Toolbar.Light" />
+                    -->
+
+                </com.google.android.material.appbar.AppBarLayout>
+
+                <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:paddingLeft="@dimen/spacing_large"
+                        android:paddingRight="@dimen/spacing_large">
+
+                    <androidx.cardview.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:visibility="gone"
+                            app:cardBackgroundColor="@color/light_blue_500"
+                            app:cardCornerRadius="6dp"
+                            app:cardElevation="2dp"
+                            app:cardUseCompatPadding="true">
+
+                        <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:orientation="vertical">
+
+                            <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="@dimen/spacing_xmlarge"
+                                    android:gravity="center_vertical"
+                                    android:orientation="horizontal">
+
+                                <View
+                                        android:layout_width="@dimen/spacing_large"
+                                        android:layout_height="0dp" />
+
+                                <TextView
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:gravity="center_vertical"
+                                        android:text="@string/stock_summary"
+                                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Subhead"
+                                        android:textColor="@color/light_blue_100"
+                                        app:fontFamily="sans-serif-medium" />
+
+                                <ImageButton
+                                        android:layout_width="@dimen/spacing_xmlarge"
+                                        android:layout_height="@dimen/spacing_xmlarge"
+                                        android:background="?attr/selectableItemBackgroundBorderless"
+                                        android:tint="@color/light_blue_100"
+                                        android:visibility="gone"
+                                        app:srcCompat="@drawable/ic_add"
+                                        android:contentDescription="TODO"
+                                        tools:ignore="ContentDescription" />
+
+                            </LinearLayout>
+
+                            <View
+                                    android:layout_width="0dp"
+                                    android:layout_height="@dimen/spacing_middle" />
+
+                            <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Available Stock"
+                                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Subhead"
+                                    android:textColor="@color/light_blue_50" />
+
+                            <TextView
+                                    android:id="@+id/tvAmount"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="XXX"
+                                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Display1"
+                                    android:textColor="@android:color/white"
+                                    app:fontFamily="sans-serif-medium" />
+
+                            <TextView
+                                    android:id="@+id/tvexpdate"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Stock from ERP will appear here"
+                                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Subhead"
+                                    android:textColor="@color/light_blue_200" />
+
+                            <View
+                                    android:layout_width="0dp"
+                                    android:layout_height="@dimen/spacing_mxlarge" />
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <View
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/spacing_small" />
+
+                    <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/spacing_middle"
+                            android:layout_marginBottom="@dimen/spacing_medium"
+                            android:gravity="center"
+                            android:text="Activities"
+                            android:textAppearance="@style/Base.TextAppearance.AppCompat.Body2"
+                            android:textColor="@color/grey_40"
+                            app:fontFamily="sans-serif-medium" />
+
+
+                    <LinearLayout
+                            android:id="@+id/enter_plan_days"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="15dp"
+                            android:visibility="gone"
+                            android:orientation="horizontal"
+                            android:weightSum="3">
+
+                        <com.google.android.material.textfield.TextInputLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_weight="2"
+                                android:background="@drawable/bg_normal_button">
+
+                            <EditText
+                                    android:id="@+id/tvDays"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:hint="Enter days " />
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <Button
+                                android:id="@+id/btnSubmit"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_weight="1"
+                                android:backgroundTint="@color/blue_grey_900"
+                                android:text="Submit"
+                                android:textColor="@color/white" />
+                    </LinearLayout>
+
+
+                    <androidx.cardview.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:cardCornerRadius="6dp"
+                            app:cardElevation="2dp"
+                            app:cardUseCompatPadding="true">
+
+                        <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                            <RelativeLayout
+                                    android:layout_width="20dp"
+                                    android:layout_height="20dp"
+                                    android:layout_marginTop="1dp"
+                                    android:visibility="gone">
+
+                                <ImageView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_centerInParent="true"
+                                        android:tint="@color/grey_10"
+                                        app:srcCompat="@drawable/shape_circle" />
+
+                                <ImageView
+                                        android:layout_width="11dp"
+                                        android:layout_height="17dp"
+                                        android:layout_centerInParent="true"
+                                        android:rotation="180"
+                                        android:tint="@color/grey_40"
+                                        app:srcCompat="@drawable/ic_arrow_downward" />
+
+                            </RelativeLayout>
+
+                            <View
+                                    android:layout_width="@dimen/spacing_middle"
+                                    android:layout_height="0dp" />
+
+                            <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:orientation="vertical">
+
+                                <TextView
+                                        android:id="@+id/tvdate"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="@dimen/dp_5"
+                                        android:gravity="center"
+                                        android:text="Last Customer"
+                                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                                        android:textColor="@color/light_blue_500" />
+
+
+                                <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:orientation="horizontal"
+                                        android:weightSum="3">
+
+                                    <TextView
+                                            android:id="@+id/tvcustname"
+                                            android:layout_width="0dp"
+                                            android:layout_height="wrap_content"
+                                            android:layout_weight="2"
+                                            android:text="Sent"
+                                            android:textAppearance="@style/Base.TextAppearance.AppCompat.Body2"
+                                            android:textColor="@color/indigo_900" />
+
+
+                                    <TextView
+                                            android:id="@+id/tvcusttype"
+                                            android:layout_width="0dp"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginLeft="@dimen/dp_8"
+                                            android:layout_weight="1"
+                                            android:text="Sent"
+                                            android:textAppearance="@style/Base.TextAppearance.AppCompat.Caption"
+                                            android:textColor="@color/grey_40" />
+
+
+                                </LinearLayout>
+
+                                <TextView
+                                        android:id="@+id/tvgrpcustName"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="10 jan 2018 07:38"
+                                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Caption"
+                                        android:textColor="@color/grey_40"
+                                        android:visibility="gone" />
+
+                                <LinearLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="match_parent"
+                                        android:gravity="bottom"
+                                        android:orientation="vertical">
+
+                                    <TextView
+                                            android:id="@+id/tvPhone"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginRight="@dimen/dp_5"
+                                            android:text="phone"
+                                            android:textAppearance="@style/Base.TextAppearance.AppCompat.Caption"
+                                            android:textColor="@color/grey_40"
+                                            android:visibility="gone" />
+
+                                    <TextView
+                                            android:id="@+id/tvEmailid"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginRight="@dimen/dp_5"
+                                            android:text="email"
+                                            android:textAppearance="@style/Base.TextAppearance.AppCompat.Caption"
+                                            android:textColor="@color/grey_40"
+                                            android:visibility="gone" />
+
+                                </LinearLayout>
+
+
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                            android:id="@+id/attendanceCard"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:cardCornerRadius="6dp"
+                            app:cardElevation="2dp"
+                            app:cardUseCompatPadding="true">
+
+                        <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                            <TextView
+                                    android:id="@+id/tvdate_attendent"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="@dimen/dp_5"
+                                    android:gravity="center"
+                                    android:text="Today's Attendance"
+                                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                                    android:textColor="@color/light_blue_500" />
+
+                            <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+
+                                <RelativeLayout
+                                        android:layout_width="20dp"
+                                        android:layout_height="20dp"
+                                        android:layout_marginTop="1dp"
+                                        android:visibility="gone">
+
+                                    <ImageView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:layout_centerInParent="true"
+                                            android:tint="@color/grey_10"
+                                            app:srcCompat="@drawable/shape_circle" />
+
+                                    <ImageView
+                                            android:layout_width="15dp"
+                                            android:layout_height="15dp"
+                                            android:layout_centerInParent="true"
+                                            android:rotation="180"
+                                            android:tint="@color/grey_40"
+                                            app:srcCompat="@drawable/ic_arrow_downward" />
+
+                                </RelativeLayout>
+
+                                <View
+                                        android:layout_width="@dimen/spacing_middle"
+                                        android:layout_height="0dp" />
+
+                                <LinearLayout
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:orientation="vertical">
+
+                                    <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="Punch In"
+                                            android:textAppearance="@style/Base.TextAppearance.AppCompat.Body2"
+                                            android:textColor="@color/indigo_900" />
+
+
+                                    <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="Punch Out"
+                                            android:textAppearance="@style/Base.TextAppearance.AppCompat.Body2"
+                                            android:textColor="@color/indigo_900" />
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:gravity="end"
+                                        android:orientation="vertical">
+
+                                    <TextView
+                                            android:id="@+id/tvPunchIn"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginRight="@dimen/dp_5"
+                                            android:text="Not punched in yet"
+                                            android:textAppearance="@style/Base.TextAppearance.AppCompat.Caption"
+                                            android:textColor="@color/grey_40" />
+
+                                    <TextView
+                                            android:id="@+id/tvPunchOut"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginRight="@dimen/dp_5"
+                                            android:text="Not punched out yet"
+                                            android:textAppearance="@style/Base.TextAppearance.AppCompat.Caption"
+                                            android:textColor="@color/grey_40" />
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <View
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/spacing_large" />
+
+                    <androidx.cardview.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:cardBackgroundColor="@color/white">
+
+                        <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                            <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_horizontal"
+                                    android:layout_marginTop="@dimen/dp_5"
+                                    android:layout_marginBottom="@dimen/dp_5"
+                                    android:text="Recent Orders" />
+
+                            <androidx.recyclerview.widget.RecyclerView
+                                    android:id="@+id/result3_recycler"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content" />
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <View
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/dp_10" />
+
+                    <androidx.cardview.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:cardBackgroundColor="@color/white">
+
+                        <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                            <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_horizontal"
+                                    android:layout_marginTop="@dimen/dp_5"
+                                    android:layout_marginBottom="@dimen/dp_5"
+                                    android:text="Recent Expenses" />
+
+
+                            <androidx.recyclerview.widget.RecyclerView
+                                    android:id="@+id/result1_recycler"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content" />
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </androidx.core.widget.NestedScrollView>
+
+        <View
+                android:id="@+id/_last_view"
+                android:layout_width="match_parent"
+                android:layout_height="4dp"
+                android:layout_alignParentBottom="true"
+                android:background="@drawable/bg_gradient_very_soft" />
+
+
+    </RelativeLayout>
+
+    <!--
+        <android.support.design.widget.TabLayout
+                android:id="@+id/tab_layout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/spacing_xxlarge"
+                android:background="@color/light_blue_500"
+                app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+                app:tabIndicatorHeight="0dp"
+                app:tabMode="fixed"
+                app:theme="@style/Toolbar.Light"/>
+    -->
+
+</LinearLayout>

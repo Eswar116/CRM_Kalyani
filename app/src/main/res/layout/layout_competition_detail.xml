@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white"
+        android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:elevation="@dimen/dp_50"
+            android:orientation="vertical">
+
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:padding="@dimen/dp_15">
+
+            <TextView
+                    android:id="@+id/tvCancel"
+                    style="@style/btnGrey"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:gravity="center"
+                    android:text="Cancel"
+                    android:textSize="@dimen/sp_14" />
+
+            <TextView
+                    android:id="@+id/tvTitle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="Competition "
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/sp_16" />
+
+
+            <TextView
+                    android:id="@+id/save"
+                    style="@style/btnBlue"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:text="Save"
+                    android:textSize="@dimen/sp_14" />
+
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <ScrollView
+            android:id="@+id/scrollView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+            <TextView
+                    android:id="@+id/tvApply"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorBackground"
+                    android:padding="@dimen/dp_5"
+                    android:text="COMPETITION MAIN"
+                    android:textSize="@dimen/sp_12" />
+
+            <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="1dp"
+                    android:background="@color/colorUnpressed" />
+
+            <TextView
+                    android:id="@+id/tvHintOrder"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_20"
+                    android:paddingTop="10dp"
+                    android:text="Responsible"
+                    android:textSize="@dimen/sp_14" />
+
+            <TextView
+                    android:id="@+id/tvName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_20"
+                    android:layout_marginTop="@dimen/dp_5"
+                    android:layout_marginRight="@dimen/dp_20"
+                    android:background="@drawable/bg_filter_text"
+                    android:paddingTop="@dimen/dp_5"
+                    android:paddingRight="@dimen/dp_40"
+                    android:paddingBottom="@dimen/dp_5"
+                    android:text="John "
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/sp_16" />
+
+
+            <TextView
+                    android:id="@+id/tvHintDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_20"
+                    android:paddingTop="10dp"
+                    android:text="Date"
+                    android:textSize="@dimen/sp_14" />
+
+            <TextView
+                    android:id="@+id/tvDate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_20"
+                    android:layout_marginTop="@dimen/dp_5"
+                    android:layout_marginRight="@dimen/dp_20"
+                    android:background="@drawable/bg_filter_text"
+                    android:paddingTop="@dimen/dp_5"
+                    android:paddingRight="@dimen/dp_40"
+                    android:paddingBottom="@dimen/dp_5"
+                    android:text=""
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/sp_16" />
+
+            <TextView
+                    android:id="@+id/tvHintName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_20"
+                    android:paddingTop="10dp"
+                    android:text="Customer Name"
+                    android:textSize="@dimen/sp_14" />
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_20"
+                    android:layout_marginTop="@dimen/dp_5"
+                    android:layout_marginRight="@dimen/dp_20"
+                    android:background="@drawable/bg_filter_text"
+                    android:orientation="horizontal">
+
+                <TextView
+                        android:id="@+id/svCustomer"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:paddingTop="@dimen/dp_5"
+                        android:paddingRight="@dimen/dp_40"
+                        android:paddingBottom="@dimen/dp_5"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/sp_16" />
+
+                <ImageView
+                        android:id="@+id/ivSearch"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        app:srcCompat="@drawable/ic_search" />
+            </LinearLayout>
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_20"
+                    android:paddingTop="10dp"
+                    android:text="Competitor Name"
+                    android:textSize="@dimen/sp_14" />
+
+            <EditText
+                    android:id="@+id/EdtCompetitor"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_20"
+                    android:layout_marginTop="@dimen/dp_5"
+                    android:layout_marginRight="@dimen/dp_20"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_filter_text"
+                    android:paddingTop="@dimen/dp_5"
+                    android:paddingRight="@dimen/dp_40"
+                    android:paddingBottom="@dimen/dp_5"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/sp_16" />
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_10"
+                    android:background="@color/colorBackground"
+                    android:orientation="horizontal">
+
+                <TextView
+                        android:id="@+id/tvHintOrderDetail"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/dp_5"
+                        android:text="COMPETITION DETAIL"
+                        android:textSize="@dimen/sp_12" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                    android:id="@+id/llUpload"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                <TextView
+                        android:id="@+id/tvHintDoc"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/dp_20"
+                        android:layout_weight="1"
+                        android:gravity="left|center"
+                        android:text="Upload Document "
+                        android:textSize="@dimen/sp_14" />
+
+                <ImageView
+                        android:id="@+id/ivAdd"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/dp_20"
+                        android:padding="@dimen/dp_5"
+                        android:src="@android:drawable/ic_menu_add"
+                        android:tint="@color/colorToolbar" />
+            </LinearLayout>
+
+            <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="1dp"
+                    android:background="@color/colorUnpressed" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rvList"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_10"
+                    android:background="@color/colorBackground"></androidx.recyclerview.widget.RecyclerView>
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_20"
+                    android:paddingTop="10dp"
+                    android:text="Remarks"
+                    android:textSize="@dimen/sp_14" />
+
+            <EditText
+                    android:id="@+id/etRemarks"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_20"
+                    android:layout_marginTop="@dimen/dp_5"
+                    android:layout_marginRight="@dimen/dp_20"
+                    android:layout_marginBottom="@dimen/dp_10"
+                    android:background="@drawable/bg_filter_text"
+                    android:paddingTop="@dimen/dp_5"
+                    android:paddingRight="@dimen/dp_40"
+                    android:paddingBottom="@dimen/dp_5"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/sp_16" />
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

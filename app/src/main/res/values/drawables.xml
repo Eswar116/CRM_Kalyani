@@ -1,0 +1,15 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+    <item name="ic_menu_customer" type="drawable">@drawable/ic_customer</item>
+    <item name="ic_menu_order" type="drawable">@drawable/ic_list</item>
+    <item name="ic_menu_collection" type="drawable">@drawable/ic_collection</item>
+    <item name="ic_menu_expense" type="drawable">@drawable/ic_expensive</item>
+    <item name="ic_menu_attendance" type="drawable">@drawable/ic_attendance</item>
+    <item name="ic_menu_home" type="drawable">@drawable/ic_icon</item>
+    <item name="ic_menu_star" type="drawable">@android:drawable/star_big_off</item>
+    <item name="ic_menu_competition" type="drawable">@drawable/ic_trophy</item>
+    <item name="ic_menu_feedback" type="drawable">@drawable/ic_survey</item>
+    <item name="ic_menu_help" type="drawable">@drawable/ic_help</item>
+    <item name="ic_menu_about" type="drawable">@drawable/ic_about</item>
+    <item name="ic_menu_marketplan" type="drawable">@drawable/ic_marketplan</item>
+
+    c</resources>
